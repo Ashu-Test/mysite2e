@@ -45,7 +45,8 @@ public class AdminTableDAO {
             
 
         } catch (Exception e) {
-            e.printStackTrace();
+           System.out.println("admin not found");
+              e.printStackTrace();
         }
           return f;
          
