@@ -45,7 +45,7 @@ public class ConnectionClass {
             
 		
 
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
