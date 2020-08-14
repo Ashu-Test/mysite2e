@@ -106,6 +106,69 @@ public class RegisterServlet extends HttpServlet {
                    else{
                        response.sendRedirect("/MYSITE/error_page.jsp");
                    }
+		    
+		    
+		    
+		    
+		    
+		            
+                   if (part != null) {
+
+        // saving image to db
+           
+      
+	
+           Connection myconn  =ConnectionClass.getConnection();    // where id=?
+           try{
+		//String query = "insert into register(picblob) value=? where id='7d'";
+		String query = "UPDATE register SET picblob=? WHERE id=?";
+                
+                            PreparedStatement ps = myconn.prepareStatement(query);
+                        
+                          ps.setString(2,key);
+           
+			    InputStream is = part.getInputStream();
+			    ps.setBlob(1, is);
+                        int result = ps.executeUpdate();
+                        
+                        
+                        if(result > 0){
+	    	 out.println("<h1>yesss BLOB</h1>");
+	    }
+		else{
+			 out.println("<h1>NOO BLOB</h1>");
+                         response.sendRedirect("/MYSITE/error_page.jsp");
+		}
+                        
+                        
+                        
+			}
+			catch(Exception evnt){
+				evnt.printStackTrace();
+                                response.sendRedirect("/MYSITE/error_page.jsp");
+			}
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                   }
+                   else{
+                       response.sendRedirect("/MYSITE/error_page.jsp");
+                   }
+            
+       
+                   
+		    
+		    
+		    
+		    
+		    
             
        
                  
