@@ -168,7 +168,8 @@
           <td data-title="Tickets"><c:out value="${userL.ticket}"/></td> 
          <td data-title="Reg-Date"><c:out value="${userL.regDate}"/></td>
      <%--     <!--<td data-title="Pic"><a href=""><c:out value="${userL.picName}"/></a></td>-->  --%>
-          <td data-title="ID Card"><img src="USERpics/<c:out value="${userL.picName}"/>" style=" max-width:150px;" >   </td>
+           <!--<td data-title="ID Card"><img src="USERpics/ <%--    <c:out value="${userL.picName}"/>" --%>  style=" max-width:150px;" >   </td>-->
+          <td data-title="ID Card"><img src="data:image/jpg;base64,${userL.base64Image}" style=" max-width:150px;" >   </td>
           
         </tr>
     
