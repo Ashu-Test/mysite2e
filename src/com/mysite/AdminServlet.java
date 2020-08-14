@@ -62,7 +62,9 @@ public class AdminServlet extends HttpServlet {
               
 //              response.sendRedirect("AllPages/AdminDashboard/Dashboard.jsp");
 
-              response.sendRedirect("/MYSITE/DataServlet");
+             // response.sendRedirect("/MYSITE/DataServlet");
+              response.sendRedirect("/DataServlet");
+              
           }
           else{
                 //to show the invalid credentials effect
