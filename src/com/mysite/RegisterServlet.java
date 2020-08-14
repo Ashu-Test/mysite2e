@@ -97,14 +97,14 @@ public class RegisterServlet extends HttpServlet {
                        count++;
                     out.println("Profile updated...");
                 } else {
-                    response.sendRedirect("/MYSITE/error_page.jsp");
+                    response.sendRedirect("/error_page.jsp");
                     out.println("not updated..");
 
                 }
 
                    }
                    else{
-                       response.sendRedirect("/MYSITE/error_page.jsp");
+                       response.sendRedirect("/error_page.jsp");
                    }
 		    
 		    
@@ -137,7 +137,7 @@ public class RegisterServlet extends HttpServlet {
 	    }
 		else{
 			 out.println("<h1>NOO BLOB</h1>");
-                         response.sendRedirect("/MYSITE/error_page.jsp");
+                         response.sendRedirect("/error_page.jsp");
 		}
                         
                         
@@ -145,7 +145,7 @@ public class RegisterServlet extends HttpServlet {
 			}
 			catch(Exception evnt){
 				evnt.printStackTrace();
-                                response.sendRedirect("/MYSITE/error_page.jsp");
+                                response.sendRedirect("/error_page.jsp");
 			}
                 
                 
@@ -159,7 +159,7 @@ public class RegisterServlet extends HttpServlet {
                 
                    }
                    else{
-                       response.sendRedirect("/MYSITE/error_page.jsp");
+                       response.sendRedirect("/error_page.jsp");
                    }
             
        
@@ -174,7 +174,7 @@ public class RegisterServlet extends HttpServlet {
                  
            
             }else {
-                response.sendRedirect("/MYSITE/error_page.jsp");
+                response.sendRedirect("/error_page.jsp");
                 out.println("<h1>nooooo</h1>");
             }
   
@@ -226,7 +226,7 @@ public class RegisterServlet extends HttpServlet {
             
             
     } catch (IOException | NumberFormatException | ServletException exvt) {
-           response.sendRedirect("/MYSITE/error_page.jsp");
+           response.sendRedirect("/error_page.jsp");
             }
       
             
