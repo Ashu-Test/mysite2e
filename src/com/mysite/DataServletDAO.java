@@ -5,15 +5,16 @@
  */
 package com.mysite;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+
+import java.io.*;
+import java.sql.*;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpSession;
-
 /**
  *
  * @author ashut
@@ -66,7 +67,40 @@ public static List<RegsiterTableDAO> list() throws SQLException{
      user.setTicket(rs.getInt(7));
      user.setRegDate(rs.getTimestamp(8));
      user.setPicName(rs.getString(9));
-    Userlists.add(user);
+   
+    //  get the blob
+      
+      
+     
+     try {
+     Blob blob=rs.getBlob(10);
+     InputStream is=blob.getBinaryStream();
+     ByteArrayOutputStream os= new ByteArrayOutputStream();
+     byte[] buffer=new byte[10000];
+     int bytesRead=-1;
+      
+          while((bytesRead=is.read(buffer))!=-1){
+              os.write(buffer,0,bytesRead);
+         }
+     
+        byte[] imageBytes=os.toByteArray();
+        String base64Image=Base64.getEncoder().encodeToString(imageBytes);
+       //  is.close();os.close();
+          
+          user.setBase64Image(base64Image);
+     
+  } catch (IOException ex) {
+        
+          System.out.println("image not read");
+            ex.printStackTrace();
+      }   
+     
+      
+      
+      
+      
+      
+      Userlists.add(user);
    
 
 
