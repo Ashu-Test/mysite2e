@@ -23,16 +23,27 @@ public class ConnectionClass {
         try {
 
             if(conn==null){
-
+            try {
                 Class.forName("com.mysql.jdbc.Driver");
-                conn= DriverManager.getConnection("jdbc:mysql://jws-app-mysql:3306/mysiteDB","ashu","ashu14mysql");
+                } catch (ClassNotFoundException e) {
+			System.out.println("Error. Driver class not found: " + e);
+		}
 
+                
+                
+                try {
+                conn= DriverManager.getConnection("jdbc:mysql://jws-app-mysql:3306/db","ashu","ashu14mysql");
+               } catch (SQLException e) {
+			System.out.println("Error. Connection problem: " + e);
+			
+		}
+                    
+                    
+                    
             }
             
-
-
-
-
+            
+		
 
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
