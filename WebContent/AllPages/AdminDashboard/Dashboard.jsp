@@ -84,7 +84,7 @@
    
 
    <!--navBAR-->
-   <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #6372d6">
+   <nav class="navbar navbar-expand-md navbar-dark py-3" style="background-color: #6372d6">
   <a class="navbar-brand" href="#" style="font-size: 2rem">Event Management @Geeks_grp</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
