@@ -7,6 +7,19 @@
 	font-family: 'entypo', sans-serif;
 }
 
+
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+
+
+
+
+
 #social-sidebar {
 	margin:0!important;
 	left: 1px!important;
