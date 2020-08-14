@@ -270,7 +270,7 @@
      function pathToRegisterServlet(){
              //   document.getElementById('MAINconfirm-form').action=location.origin+"/MYSITE/RegisterServlet";
              
-                document.getElementById('confirm-form').action=location.origin+"/MYSITE/RegisterServlet"
+                document.getElementById('confirm-form').action=location.origin+"/RegisterServlet"
             }
     function validateD(){
          var regex=new RegExp("^[6-9]\d{9}$");
