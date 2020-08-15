@@ -100,7 +100,7 @@
   </div>
 </div>
 
-<form action="${pageContext.request.contextPath}/AdminServlet" method="GET">
+<form action="${pageContext.request.contextPath}/AdminServlet" method="GET" target="_blank">
   <div class="hand"></div>
   <div class="hand rgt"></div>
   <h1>Admin Login</h1>
