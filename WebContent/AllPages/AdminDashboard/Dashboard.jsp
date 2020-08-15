@@ -56,13 +56,13 @@
 
         
         
-        
+  <!--      
    <div id="nloader" class=".layer1_class" style="background:#6372d6 url('USERpics/loader4.gif') no-repeat center center; position: fixed; width: 100%;height: 100vh;  z-index: 10;
     overflow: visible;">
-        <!--<img src="USERpics/loader.gif" style="background:no-repeat center center;">-->
-    </div>
+        
+    </div>  -->
     
-    <div id="mainC" class=".layer2_class" style="display:none">
+<div id="mainC" class=".layer2_class">   <!--  style="display:none"  -->
     
         <!--all links--> 
   
