@@ -78,31 +78,11 @@
   
   
   
-  
+
   
    
    
 
-   <!--navBAR-->
-   <nav class="navbar navbar-expand-md navbar-dark py-3" style="background-color: #6372d6">
-  <a class="navbar-brand" href="#" style="font-size: 2rem">Event Management @Geeks_grp</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-   
-    <form class="form-inline my-2 my-lg-0">
-        <p class="bgw vertical-center mt-2 my-2 mx-5" style="text-align: right; font-size: 2rem" ><b>  
-                <%=ad.getUserName() %>     
-            </b></p> 
-        <!--<input class="form-control " type="text" style="margin-left: 67vw">-->
-        <a class="btn btn-primary  my-2 my-sm-0 py-2 px-4 mx-4" href="LogoutServlet" style="font-size: 1.5rem" >Logout</a>
-      <!--<button class="btn  btn-outline-success my-2 my-sm-0 py-0" type="button">Logout</button>-->
-    </form>
-  </div>
-</nav>
-   
    
    
    
