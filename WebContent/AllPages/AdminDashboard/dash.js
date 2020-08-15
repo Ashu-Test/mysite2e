@@ -1,4 +1,4 @@
-$(window).on('load',function (){
+/*$(window).on('load',function (){
    // setTimeout( $('#mainC').show(),3000);   
     // $('#mainC').show();
     setTimeout(function (){
@@ -17,7 +17,7 @@ $(window).on('load',function (){
 });
 
 
-
+*/
 
 
 
