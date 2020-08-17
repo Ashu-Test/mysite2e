@@ -32,7 +32,7 @@ public class ConnectionClass {
                 
                                                               //jws-app-mysql
                 try {
-                conn= DriverManager.getConnection("jdbc:mysql://172.30.34.122:3306/db?useSSL=false&autoReconnect=true","ashu","ashu14mysql");
+                conn= DriverManager.getConnection("jdbc:mysql://jws-app-mysql:3306/db?useSSL=false&autoReconnect=true","ashu","ashu14mysql");
                } catch (SQLException e) {
 			System.out.println("Error. Connection problem: " + e);
 			
