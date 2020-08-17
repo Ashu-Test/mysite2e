@@ -8,8 +8,8 @@ package com.mysite;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import com.mysql.cj.jdbc.MysqlDataSource;
-import com.mysql.jdbc.jdbc2.optional.*;
+//import com.mysql.cj.jdbc.MysqlDataSource;
+//import com.mysql.jdbc.jdbc2.optional.*;
 /**
  *
  * @author ashut  mysiteDB
