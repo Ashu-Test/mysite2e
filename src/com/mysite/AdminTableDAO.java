@@ -23,7 +23,7 @@ public class AdminTableDAO {
     
     
     
-     Connection myconn= ConnectionClass.getConnection();
+     Connection myconn= ConnectionClass.getMyConnection();
      
      public boolean isAdmin( String Name,String pswrd){
          boolean f=false;
