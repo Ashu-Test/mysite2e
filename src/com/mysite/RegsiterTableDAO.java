@@ -100,7 +100,7 @@ public class RegsiterTableDAO {
       
     }
     
-    Connection myconn= ConnectionClass.getConnection();
+    Connection myconn= ConnectionClass.getMyConnection();
  public boolean isRegistered(String id,String name, String mobile, String email, String gender, String regType, int TicketNo, String picName){
      boolean f=false;
      
