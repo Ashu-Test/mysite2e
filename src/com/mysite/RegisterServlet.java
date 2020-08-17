@@ -118,7 +118,7 @@ public class RegisterServlet extends HttpServlet {
            
       
 	
-           Connection myconn  =ConnectionClass.getConnection();    // where id=?
+           Connection myconn  =ConnectionClass.getMyConnection();    // where id=?
            try{
 		//String query = "insert into register(picblob) value=? where id='7d'";
 		String query = "UPDATE register SET picblob=? WHERE id=?";
