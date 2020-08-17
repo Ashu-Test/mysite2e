@@ -31,7 +31,7 @@ public static List<RegsiterTableDAO> list() throws SQLException{
     List<RegsiterTableDAO> Userlists=new ArrayList<RegsiterTableDAO>();
     
     
-    Connection connection=ConnectionClass.getConnection();
+    Connection connection=ConnectionClass.getMyConnection();
 
 
 
